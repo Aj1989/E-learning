@@ -7,7 +7,13 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/health", (req, res) => {
-  res.send({ status: "API is running" });
+  res.send({
+    status: "API is running",
+    name: "Ajinkya Khopade",
+    address: "K-City",
+    id: 1,
+    action: "aggresive",
+  });
 });
 
 const PORT = process.env.PORT || 5000;
